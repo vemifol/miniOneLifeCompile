@@ -78,7 +78,7 @@ fi
 # Getting libpng
 if [ ! -d l*png* ]; then
 	pushd .
-	wget http://downloads.sourceforge.net/project/libpng/libpng16/1.6.37/libpng-1.6.37.tar.gz -O- | tar xfz -
+	wget https://sourceforge.net/projects/libpng/files/libpng16/older-releases/1.6.37/libpng-1.6.37.tar.gz/download -O- | tar xfz -
 	cd l*png*
 	./configure \
 		--host=i686-w64-mingw32 \

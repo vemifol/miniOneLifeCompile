@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-AUTORUN=$(cat AUTORUN)
+AUTORUN=0
 PLATFORM=$(cat PLATFORM_OVERRIDE)
 if [[ $PLATFORM != 1 ]] && [[ $PLATFORM != 5 ]]; then PLATFORM=${1-5}; fi
 if [[ $PLATFORM != 1 ]] && [[ $PLATFORM != 5 ]]; then
